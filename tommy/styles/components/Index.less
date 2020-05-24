@@ -1,0 +1,136 @@
+body::after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .05;
+  position: fixed;
+  z-index:-1;
+  background: center/cover no-repeat;
+  background-image: url(../../assets/bgimg3.jpeg);
+  // background-size:100%;
+}
+
+#tommy {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+
+  .donate-address {
+    display: inline;
+    position: fixed;
+    font-size: 12px;
+    line-height: 1.5em;
+    left: 0;
+    bottom: 0;
+    margin-left: 5px;
+    overflow: hidden;
+    opacity: .6;
+    transition: all .3s;
+    z-index: 10;
+    // background-color: rgba(80, 230, 215, 1);
+    color: #9f9f9f;
+  }
+  #main {
+    position: relative;
+    min-height: calc(~'100vh - 84px');
+    flex: 1;
+    // background-color: #ffffff;
+    overflow: hidden;
+  }
+
+  .back-top {
+    right: 20px;
+    bottom: 20px;
+
+    & > div {
+      background-color: @primary-color;
+      box-shadow: 0 3px 12px darken(@primary-color, 1%);
+    }
+  }
+
+  .music-play {
+    position: fixed;
+    left: 30px;
+    top: 160px;
+    z-index:98;
+  }
+}
+.welcomeMyWay{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  .welcome{
+    width:100%;
+    height:100%;
+    box-shadow: 0 3px 12px rgba(75, 211, 245, 0.534);
+    background-color: rgba(80, 230, 215, 1);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    .welcome-text{
+      font: normal 300 64px/1 Josefin Sans,sans-serif;
+      font-size:6vw;
+      color:#eee;
+     }
+     .welcome-go{
+      font: normal 300 64px/1 Josefin Sans,sans-serif;
+      text-align:center;
+      font-size:5vw;
+      border-radius: 10px;
+      color:#fff;
+      cursor: pointer;
+     }
+     .welcome-go:hover{
+      
+      background:rgba(250,250,250,0.5);
+      color:orange;
+      
+     }
+     
+  }
+}
+* {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+body.dark {
+  #tommy {
+    #main {
+      // background-color: @dark-bg-color;
+    }
+  }
+}
+
+@import "./Curtain.less";
+@import "./Header.less";
+@import "./Home.less";
+@import "./Posts.less";
+@import "./Tags.less";
+@import "./Tag.less";
+@import "./TagCloud.less";
+@import "./Search.less";
+@import "./Timeline.less";
+@import "./Links.less";
+@import "./About.less";
+@import "./Post.less";
+@import "./Password.less";
+@import "./Markdown.less";
+@import "./Discuss.less";
+@import "./Footer.less";
+@import "./Bubbles.less";
+@import "./Dark.less";
+@import "./404.less";

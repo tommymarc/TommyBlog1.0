@@ -1,0 +1,16 @@
+{
+  "name": "VuePress Theme Yur",
+  "short_name": "Yur",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#3c67bd",
+  "background_color": "#ffffff",
+  "description": "A simple and powerful vuepress theme.",
+  "related_applications": [
+    {
+      "platform": "web",
+      "url": "https://github.com/cnguu/vuepress-theme-yur",
+      "id": "com.github.cnguu.vuepress-theme-yur"
+    }
+  ]
+}
